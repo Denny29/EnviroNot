@@ -1,7 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.css';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
+import Fracking from "./pages/Fracking";
 import NoPage from "./pages/NoPage";
 
 export default function App() {
@@ -10,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="Fracking" element={<Fracking />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

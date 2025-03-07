@@ -8,6 +8,9 @@ const Layout = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
+            <li>
+              <Link to="/Fracking">Fracking</Link>
+            </li>
           </ul>
         </nav>
   

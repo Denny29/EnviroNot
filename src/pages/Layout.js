@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
     return (
       <>
-        <div className="">
+        <div className="" style={{marginLeft:"20px"}}>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             
             <ul className="navbar-nav mr-auto">

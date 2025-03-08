@@ -1,5 +1,3 @@
-import companies from "../assets/companies.json"
-
 const Table = ({ companies }) => {
     return (
         <div class="d-flex align-content-end flex-column">

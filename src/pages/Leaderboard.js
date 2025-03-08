@@ -1,8 +1,14 @@
+import Layout from './Layout.js';
+import Table from './Table.js'
+
 const Leaderboard = () => {
     return (
-        <div>
-
-        </div>
+      <div>
+        <body>
+            <Layout></Layout>
+            <Table></Table>
+        </body>
+      </div>
     )
 }
 

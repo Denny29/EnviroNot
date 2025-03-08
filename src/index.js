@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Fracking from "./pages/Fracking";
+import {Fracking} from "./pages/Fracking";
 import Initiatives from "./pages/Initiatives";
 import Leaderboard from "./pages/Leaderboard";
 import Petition from "./pages/Petition";

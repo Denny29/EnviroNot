@@ -44,10 +44,10 @@ const InfoCard = (props) => {
         <div class="card-body">
           <h5 class="card-title">{props.title}</h5>
           <p class="card-text">{props.content}</p>
-          <a target="_blank" href={props.link} class="btn btn-primary">Click here to learn more</a>
+          {props.link && <a target="_blank" href={props.link} class="btn btn-primary">Click here to learn more</a>}
         </div>
       </div>
     )
 }
 
-export default Fracking;
+export {Fracking, InfoCard};

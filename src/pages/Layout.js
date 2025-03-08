@@ -3,10 +3,10 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
     return (
       <>
-        <div className="" style={{marginLeft:"20px"}}>
+        <div className="">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mr-auto" style={{marginLeft:"20px"}}>
               <li className="nav-item">
                 <Link className="nav-link" to="/">Home</Link>
               </li>

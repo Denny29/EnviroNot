@@ -19,9 +19,9 @@ const Layout = () => {
               <li className="nav-item">
                 <Link className="nav-link"to="/Leaderboard">Leaderboard</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link"to="/Petition">Petition</Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link"to="/Merch">Merch</Link>
               </li>

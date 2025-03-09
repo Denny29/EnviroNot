@@ -22,7 +22,7 @@ const Merch = () => {
                 <InfoCard
                     image={battery}
                     title="Car Battery" 
-                    content="They all fell into the ocean. Feed the eels!"
+                    content="Out of Stock (they all fell into the ocean)  Feed the eels!"
                 />
             </div>
             <br></br><br></br><br></br>

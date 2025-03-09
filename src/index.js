@@ -8,6 +8,7 @@ import Initiatives from "./pages/Initiatives";
 import Leaderboard from "./pages/Leaderboard";
 import Petition from "./pages/Petition";
 import Merch from "./pages/Merch";
+import Game from "./pages/Game";
 import NoPage from "./pages/NoPage";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="Leaderboard" element={<Leaderboard />} />
           <Route path="Petition" element={<Petition />} />
           <Route path="Merch" element={<Merch />} />
+          <Route path="Game" element={<Game />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

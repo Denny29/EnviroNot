@@ -2,7 +2,7 @@ const Table = ({ companies }) => {
     return (
         <div class="d-flex align-content-end flex-column">
             <div class="d-flex justify-content-center text-center p-2 fs-4">
-                These are enviroNOT's favorite companies — <br></br>
+                These are EnviroNot's favorite companies — <br></br>
                 these heroic organizations have done more to <br></br>
                 DESTROY the environment than any other companies in history<br></br>
             </div>

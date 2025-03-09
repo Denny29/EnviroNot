@@ -31,14 +31,13 @@ const Game = () => {
             return tempBoard;
         });
 
-        if (turnCount < 1) {
+        if (turnCount <= 1) {
             setGameOver(true);
-            handleLoss();
         }
     };
 
     const shuffleDuck = () => {
-        const randInt = Math.floor(Math.random() * 3);
+        const randInt = Math.floor(Math.random() * originalBoard.length);
         console.log("Random Integer:", randInt);
         setBoard(prevBoard => {
             const tempBoard = _.cloneDeep(prevBoard);
@@ -60,10 +59,12 @@ const Game = () => {
     };
 
     const handleLoss = () => {
-        board.forEach((map) => {
-            if(map.color != "black")
+        let tempBoard = _.cloneDeep(board)
+        tempBoard.forEach((map) => {
+            if(map.duck)
                 map.img = missedDuck;
         })
+        setBoard(_.cloneDeep(tempBoard))
     }
 
     return (
@@ -77,7 +78,9 @@ const Game = () => {
                     <Tile key={index} click={() => tileClick(index)} bgColor={item.color} img={item.img} />
                 ))}
             </div>
+            <br></br>
             <button onClick={restart}>Restart</button>
+            <button onClick={handleLoss}>Reveal Duck</button>
         </div>
     );
 };

@@ -7,7 +7,7 @@ const Merch = () => {
     return (
         <div style={{marginLeft:"1rem"}}>
             <h1 style={{marginTop:"3rem"}}>We got some merch for you all to support our cause!</h1>
-            <marquee> <h3>All processions will go to buying straws to dump straight into the ocean.</h3>  </marquee>
+            <h3>All processions will go to buying straws to dump straight into the ocean.</h3>
             <div style={{display:"flex", justifyContent:"space-around", marginTop:"3rem"}}>
                 <InfoCard
                     image={frame}
@@ -22,7 +22,7 @@ const Merch = () => {
                 <InfoCard
                     image={battery}
                     title="Car Battery" 
-                    content="Free, feed the fishes."
+                    content="They all fell into the ocean. Feed the eels!"
                 />
             </div>
             <br></br><br></br><br></br>

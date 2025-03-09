@@ -62,7 +62,8 @@ const Game = () => {
         let tempBoard = _.cloneDeep(board)
         tempBoard.forEach((map) => {
             if(map.duck)
-                map.img = missedDuck;
+                if(map.color != "black")
+                    map.img = missedDuck;
         })
         setBoard(_.cloneDeep(tempBoard))
     }
